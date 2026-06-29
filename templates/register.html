@@ -2,8 +2,9 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Register for courses at Nigat Tutor.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register - My Tutoring Center</title>
+    <title>Register - Nigat Tutor</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -16,7 +17,7 @@
     </nav>
 
     <section>
-        <h1>Student Registration</h1>
+        <h1>Student Registration - Nigat Tutor</h1>
         <form method="POST">
             <label>Full Name:</label><br>
             <input type="text" name="fullname" required><br>
@@ -38,6 +39,8 @@
                 <option value="math">Mathematics</option>
                 <option value="english">English</option>
                 <option value="physics">Physics</option>
+                <option value="biology">Biology</option>
+                <option value="chemistry">Chemistry</option>
             </select><br>
             
             <button type="submit">Submit Registration</button>
