@@ -1,0 +1,59 @@
+/* ዘመናዊ የባግራውንድ እና የፊደል ስታይል */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* እዚህ ጋር ነው ማራኪውን የቀለም ቅንብር (Gradient) ያስገባንለት */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* ዋና ርዕስ */
+header {
+    padding: 50px 20px;
+}
+
+/* የኮርሶች ክፍል ዲዛይን */
+.course-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.course-card {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    padding: 25px;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    background: #ffcc00;
+}
